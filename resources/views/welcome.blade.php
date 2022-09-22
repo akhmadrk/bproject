@@ -32,6 +32,7 @@
    <!--Favicon-->
    <link rel="shortcut icon" href="{{asset('/images/favicon.png')}}" type="image/x-icon">
    <link rel="icon" href="{{asset('/images/favicon.png')}}" type="image/x-icon">
+   @yield("style")
 </head>
 
 <body>
@@ -217,6 +218,7 @@
                </article>
             </div>
          </div>
+         @yield("content")
       </div>
    </section>
 
@@ -276,5 +278,6 @@
 
    <!-- Main Script -->
    <script src="{{asset('/js/script.js')}}"></script>
+   @yield("script")
 </body>
 </html>
