@@ -21,10 +21,15 @@ Route::get('/beranda', function () {
 Route::get('/pelayanan', function () {
     return view('front/pelayanan/index');
 });
-Route::get('/admin', function () {
+Route::get('/admin/dashboard', function () {
     return view('admin/dashboard/index');
 });
 Route::get('/admin/approval/', function () {
     return view('admin/approval/index');
 });
-
+Route::get('/admin/prodeskel/', function () {
+    return view('admin/prodeskel/index');
+});
+Route::get('/admin/prodeskel/form', function () {
+    return view('admin/prodeskel/form');
+});
