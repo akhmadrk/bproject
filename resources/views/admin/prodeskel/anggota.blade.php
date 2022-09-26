@@ -13,7 +13,7 @@ Prodeskel
         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
         <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Prodeskel</li>
       </ol>
-      <h6 class="font-weight-bolder mb-0">Prodeskel</h6>
+      <h6 class="font-weight-bolder mb-0">Anggota Keluarga</h6>
     </nav>
       <ul class="navbar-nav  justify-content-end">
         <li class="nav-item d-flex align-items-center">
@@ -116,14 +116,14 @@ Prodeskel
 <!-- End Navbar -->
 <div class="container-fluid py-4">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12">
       <div class="row">
         <div class="col-xl-12 mb-xl-0 mb-4">
           <div class="card bg-transparent shadow-xl">
             <div class="overflow-hidden position-relative border-radius-xl" style="background-image: url('{{asset('/admin/assets/img/curved-images/curved0.jpg')}}')">
               <span class="mask bg-gradient-primary"></span>
               <div class="card-body position-relative z-index-1 p-3">
-                <h3 class="text-white">Form Prodeskel</h3>
+                <h3 class="text-white">Form Anggota Keluarga</h3>
               </div>
             </div>
           </div>
@@ -133,68 +133,131 @@ Prodeskel
             <div class="card-header pb-0 p-3">
               <div class="row">
                 <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0">Form Data Prodeskel</h6>
+                  <h6 class="mb-0">Form Data Keluarga</h6>
                 </div>
               </div>
             </div>
             <div class="card-body p-3">
               <div class="row">
                 <form role="form">
-                  <label>Nomor Kartu Keluarga</label>
+                  <input type="Hidden" class="form-control" placeholder="No. Urut" name="urut" id="urut">
+                  <label>Nomor Induk Kependudukan</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="No. kartu Keluarga" aria-label="nokk" aria-describedby="nokk">
+                    <input type="text" class="form-control" placeholder="No. Induk Kependudukan" name="nik" id="nik">
                   </div>
-                  <label>Nama Kepala Keluarga</label>
+                  <label>Nama Lengkap</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nama" aria-label="Nama" aria-describedby="Nama">
+                    <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama" id="nama">
                   </div>
-                  <label>Alamat</label>
+                  <label>Nomor Akta Kelahiran</label>
                   <div class="mb-3">
-                    <textarea name="alamat" id="alamat" class="form-control"></textarea>
+                    <input type="text" class="form-control" placeholder="No. Akta Kelahiran" name="nak" id="nak">
                   </div>
-                  <label>RT/RW</label>
+                  <label>Jenis Kelamin</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="RT/RW" aria-label="rtrw" aria-describedby="rtrw">
+                    <input type="radio" name="jns" id="pria" value="pria"><label for="pria">Pria</label> &nbsp;&nbsp;&nbsp; 
+                    <input type="radio" name="jns" id="wanita" value="wanita"> <label for="wanita">Wanita</label>
                   </div>
-                  <label>Dusun/Lingkungan</label>
+                  <label>Hubungan dengan Kepala Keluarga</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Dusun/Lingkungan" aria-label="dusun" aria-describedby="dusun">
+                    <select name="hub" id="hub" class="form-control">
+                      <option value="Istri"> Istri</option>
+                      <option value="Suami"> Suami</option>
+                      <option value="Anak"> Anak</option>
+                      <option value="Cucu"> Cucu</option>
+                      <option value="Mertua"> Mertua</option>
+                      <option value="Menantu"> Menantu</option>
+                      <option value="Keponakan"> Keponakan </option>
+                    </select>
                   </div>
-                  <label>Desa/Kelurahan</label>
+                  <label>Tempat Lahir</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Desa/Kelurahan" aria-label="desa" aria-describedby="desa">
+                    <input type="text" class="form-control" placeholder="Tempat Lahir" name="tl" id="tl">
                   </div>
-                  <label>Kecamatan</label>
+                  <label>Tanggal Lahir</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Kecamatan" aria-label="kecamatan" aria-describedby="kecamatan">
+                    <input type="date" class="form-control" placeholder="Tanggal Lahir" name="tgl" id="tgl">
                   </div>
-                  <label>Kabupaten/Kota</label>
+                  <label>Tanggal Pencatatan</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="kabupaten" aria-label="kabupaten" aria-describedby="kabupaten">
+                    <input type="date" class="form-control" placeholder="Tanggal Pencatatan" name="tgl_pencatatan" id="tgl_pencatatan">
                   </div>
-                  <label>Provinsi</label>
+                  <label>Status Perkawinan</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Provinsi" aria-label="provinsi" aria-describedby="provinsi">
+                    <select name="status_perkawinan" id="status_perkawinan" class="form-control">
+                      <option value="Kawin"> Kawin </option>
+                      <option value="Belum Kawin"> Belum Kawin</option>
+                      <option value="Duda"> Duda</option>
+                      <option value="Janda"> Janda</option>
+                    </select>
                   </div>
-                  <label>Bulan</label>
+                  <label>Agama</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Bulan" aria-label="bulan" aria-describedby="bulan">
+                    <select name="agama" id="agama" class="form-control">
+                      <option value="Islam"> Islam</option>
+                      <option value="Protestan"> Protestan</option>
+                      <option value="Katolik">  Katolik</option>
+                      <option value="Hindu"> Hindu </option>
+                      <option value="Budha"> Budha</option>
+                      <option value="Kong Hu Chu"> Kong Hu Chu</option>
+                    </select>
                   </div>
-                  <label>Tahun</label>
+                  <label>Golongan Darah</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Tahun" aria-label="tahun" aria-describedby="tahun">
+                    <select name="darah" id="darah" class="form-control">
+                      <option value="A">A</option>
+                      <option value="B"> B</option>
+                      <option value="AB"> AB</option>
+                      <option value="O"> O</option>
+                    </select>
+                  </div>
+                  <label>Kewarganegaraan/Etnis/Suku</label>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Kewarganegaraan/Etnis/Suku" name="suku" id="suku">
+                  </div>
+                  <label>Pendidikan Terakhir</label>
+                  <div class="mb-3">
+                    <select name="pendidikan" id="pendidikan" class="form-control">
+                      <option value="SD">SD</option>
+                      <option value="SMP"> SMP</option>
+                      <option value="SMA"> SMA</option>
+                      <option value="Diploma"> Diploma</option>
+                      <option value="S1"> S1</option>
+                      <option value="S2"> S2</option>
+                      <option value="S3"> S3</option>
+                    </select>
+                  </div>
+                  <label>Mata Pencaharian Pokok/Pekerjaan</label>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Mata Pencaharian Pokok/Pekerjaan" name="pekerjaan" id="pekerjaan">
+                  </div>
+                  <label>Nama Bapak/Ibu Kandung</label>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nama Bapak/Ibu Kandung" name="ortu" id="ortu">
+                  </div>
+                  <label>Akseptor KB</label>
+                  <div class="mb-3">
+                    <select name="akseptor" id="akseptor" class="form-control">
+                      <option value="Pil"> Pil</option>
+                      <option value="Spiral"> Spiral</option>
+                      <option value="Suntik"> Suntik</option>
+                      <option value="Susuk"> Susuk</option>
+                      <option value="Kondom"> Kondom</option>
+                      <option value="Vasektomi"> Vasektomi</option>
+                      <option value="Tubektomi"> Tubektomi /</option>
+                    </select>
                   </div>
                   <label>Nama Pengisi</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Pengisi" aria-label="pengisi" aria-describedby="kabupaten">
+                    <input type="text" class="form-control" placeholder="Pengisi" name="pengisi" id="kabupaten">
                   </div>
                   <label>Pekerjaan</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Pekerjaan Pengisi" aria-label="pekerjaan" aria-describedby="pekerjaan">
+                    <input type="text" class="form-control" placeholder="Pekerjaan Pengisi" name="pekerjaan" id="pekerjaan">
                   </div>
                   <label>Jabatan</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Jabatan Pengisi" aria-label="jabatan" aria-describedby="jabatan">
+                    <input type="text" class="form-control" placeholder="Jabatan Pengisi" name="jabatan" id="jabatan">
                   </div>
                   <div class="text-center">
                     <button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0" data-bs-toggle="modal" data-bs-target="#modalSave">Simpan</button>
@@ -203,74 +266,6 @@ Prodeskel
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="card h-100">
-        <!-- <div class="card-header pb-0 p-3">
-          <div class="row">
-            <div class="col-6 d-flex align-items-center">
-              <h6 class="mb-0">Invoices</h6>
-            </div>
-            <div class="col-6 text-end">
-              <button class="btn btn-outline-primary btn-sm mb-0">View All</button>
-            </div>
-          </div>
-        </div> -->
-        <div class="card-body p-3 pb-0">
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-keluarga" type="button" role="tab" aria-controls="nav-keluarga" aria-selected="true">Keluarga</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-anggota" type="button" role="tab" aria-controls="nav-anggota" aria-selected="false">Anggota Keluarga</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-keluarga" role="tabpanel" aria-labelledby="nav-home-tab">
-              <div class="row mt-3">
-                <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0"></h6>
-                </div>
-                <div class="col-6 text-end">
-                  <a class="btn btn-outline-primary mb-0" href="/admin/prodeskel/keluarga"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add New</a>
-                </div>
-              </div>
-              <div class="border-0 d-flex p-4 mt-4 bg-gray-100 border-radius-lg">
-                <div class="d-flex flex-column">
-                  <h6 class="mb-3 text-sm">Keluarga</h6>
-                  <span class="mb-2 text-xs">No. Kartu Keluarga: <span class="text-dark font-weight-bold ms-sm-2">Viking Burrito</span></span>
-                  <span class="mb-2 text-xs">Nama Kepala Keluarga: <span class="text-dark ms-sm-2 font-weight-bold">oliver@burrito.com</span></span>
-                </div>
-                <div class="ms-auto text-end">
-                  <button class="btn btn-link text-danger px-3 mb-0" data-bs-target="#kelDel" data-bs-toggle="modal"><i class="far fa-trash-alt me-2"></i>Delete</buttons>
-                  <button class="btn btn-link text-dark px-3 mb-0" data-bs-target="#kelEdit" data-bs-toggle="modal"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nav-anggota" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class="row mt-3">
-                <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0"></h6>
-                </div>
-                <div class="col-6 text-end">
-                  <a class="btn btn-outline-primary mb-0" href="/admin/prodeskel/anggota"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add New</a>
-                </div>
-              </div>
-              <div class="border-0 d-flex p-4 mt-4 bg-gray-100 border-radius-lg">
-                <div class="d-flex flex-column">
-                  <h6 class="mb-3 text-sm">1 Junaidi</h6>
-                  <span class="mb-2 text-xs">NIK: <span class="text-dark font-weight-bold ms-sm-2">198097032</span></span>
-                  <span class="mb-2 text-xs">Nama Lengkap: <span class="text-dark ms-sm-2 font-weight-bold">Junaidi</span></span>
-                  <span class="text-xs">Nomor Akte: <span class="text-dark ms-sm-2 font-weight-bold">FRB1235476</span></span>
-                </div>
-                <div class="ms-auto text-end">
-                  <a class="btn btn-link text-danger text-gradient px-3 mb-0" data-bs-target="#angDel" data-bs-toggle="modal" href="#angDel"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                  <a class="btn btn-link text-dark px-3 mb-0" data-bs-target="#angEdit" data-bs-toggle="modal" href="#angEdit"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                </div>
-              </div>
-            </div>
-
-          </div>      
         </div>
       </div>
     </div>

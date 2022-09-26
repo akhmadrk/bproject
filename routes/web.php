@@ -33,3 +33,9 @@ Route::get('/admin/prodeskel/', function () {
 Route::get('/admin/prodeskel/form', function () {
     return view('admin/prodeskel/form');
 });
+Route::get('/admin/prodeskel/keluarga', function () {
+    return view('admin/prodeskel/keluarga');
+});
+Route::get('/admin/prodeskel/anggota', function () {
+    return view('admin/prodeskel/anggota');
+});

@@ -116,7 +116,7 @@ Prodeskel
 <!-- End Navbar -->
 <div class="container-fluid py-4">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12">
       <div class="row">
         <div class="col-xl-12 mb-xl-0 mb-4">
           <div class="card bg-transparent shadow-xl">
@@ -203,74 +203,6 @@ Prodeskel
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="card h-100">
-        <!-- <div class="card-header pb-0 p-3">
-          <div class="row">
-            <div class="col-6 d-flex align-items-center">
-              <h6 class="mb-0">Invoices</h6>
-            </div>
-            <div class="col-6 text-end">
-              <button class="btn btn-outline-primary btn-sm mb-0">View All</button>
-            </div>
-          </div>
-        </div> -->
-        <div class="card-body p-3 pb-0">
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-keluarga" type="button" role="tab" aria-controls="nav-keluarga" aria-selected="true">Keluarga</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-anggota" type="button" role="tab" aria-controls="nav-anggota" aria-selected="false">Anggota Keluarga</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-keluarga" role="tabpanel" aria-labelledby="nav-home-tab">
-              <div class="row mt-3">
-                <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0"></h6>
-                </div>
-                <div class="col-6 text-end">
-                  <a class="btn btn-outline-primary mb-0" href="/admin/prodeskel/keluarga"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add New</a>
-                </div>
-              </div>
-              <div class="border-0 d-flex p-4 mt-4 bg-gray-100 border-radius-lg">
-                <div class="d-flex flex-column">
-                  <h6 class="mb-3 text-sm">Keluarga</h6>
-                  <span class="mb-2 text-xs">No. Kartu Keluarga: <span class="text-dark font-weight-bold ms-sm-2">Viking Burrito</span></span>
-                  <span class="mb-2 text-xs">Nama Kepala Keluarga: <span class="text-dark ms-sm-2 font-weight-bold">oliver@burrito.com</span></span>
-                </div>
-                <div class="ms-auto text-end">
-                  <button class="btn btn-link text-danger px-3 mb-0" data-bs-target="#kelDel" data-bs-toggle="modal"><i class="far fa-trash-alt me-2"></i>Delete</buttons>
-                  <button class="btn btn-link text-dark px-3 mb-0" data-bs-target="#kelEdit" data-bs-toggle="modal"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nav-anggota" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class="row mt-3">
-                <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0"></h6>
-                </div>
-                <div class="col-6 text-end">
-                  <a class="btn btn-outline-primary mb-0" href="/admin/prodeskel/anggota"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add New</a>
-                </div>
-              </div>
-              <div class="border-0 d-flex p-4 mt-4 bg-gray-100 border-radius-lg">
-                <div class="d-flex flex-column">
-                  <h6 class="mb-3 text-sm">1 Junaidi</h6>
-                  <span class="mb-2 text-xs">NIK: <span class="text-dark font-weight-bold ms-sm-2">198097032</span></span>
-                  <span class="mb-2 text-xs">Nama Lengkap: <span class="text-dark ms-sm-2 font-weight-bold">Junaidi</span></span>
-                  <span class="text-xs">Nomor Akte: <span class="text-dark ms-sm-2 font-weight-bold">FRB1235476</span></span>
-                </div>
-                <div class="ms-auto text-end">
-                  <a class="btn btn-link text-danger text-gradient px-3 mb-0" data-bs-target="#angDel" data-bs-toggle="modal" href="#angDel"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                  <a class="btn btn-link text-dark px-3 mb-0" data-bs-target="#angEdit" data-bs-toggle="modal" href="#angEdit"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                </div>
-              </div>
-            </div>
-
-          </div>      
         </div>
       </div>
     </div>
