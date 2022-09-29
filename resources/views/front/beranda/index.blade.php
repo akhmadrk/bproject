@@ -35,8 +35,8 @@ Beranda
             </div>
          </div>
          <div class="col-12 mx-auto">
-            <h3><a class="post-title" href="post-elements.html">Judul Berita</a></h3>
-            <p>Heading example Here is example of hedings. You can use this heading by following markdownify rules. For example: use # for heading 1 and use ###### for heading 6. Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</p> <a href="post-elements.html" class="btn btn-outline-primary">Continue Reading</a>
+            <h3><a class="post-title" href="/berita/detail">Judul Berita</a></h3>
+            <p>Heading example Here is example of hedings. You can use this heading by following markdownify rules. For example: use # for heading 1 and use ###### for heading 6. Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</p> <a href="/berita/detail" class="btn btn-outline-primary">Continue Reading</a>
          </div>
       </article>
    </div>
@@ -57,11 +57,11 @@ Beranda
             <!-- post-item -->
             <ul class="list-unstyled widget-list">
                   <li class="media widget-post align-items-center">
-                     <a href="post-elements.html">
-                     <img loading="lazy" class="mr-3" src="{{asset('/images/post/post-6.jpg')}}">
+                     <a href="/berita/detail">
+                        <img loading="lazy" class="mr-3" src="{{asset('/images/post/post-6.jpg')}}">
                      </a>
                      <div class="media-body">
-                     <h5 class="h6 mb-0"><a href="post-elements.html">Elements That You Can Use To Create A New Post On
+                     <h5 class="h6 mb-0"><a href="/berita/detail">Elements That You Can Use To Create A New Post On
                               This Template.</a></h5>
                      <small>March 15, 2020</small>
                      </div>
@@ -69,11 +69,11 @@ Beranda
             </ul>
             <ul class="list-unstyled widget-list">
                   <li class="media widget-post align-items-center">
-                     <a href="post-details-1.html">
+                     <a href="/berita/detail">
                      <img loading="lazy" class="mr-3" src="{{asset('/images/post/post-1.jpg')}}">
                      </a>
                      <div class="media-body">
-                     <h5 class="h6 mb-0"><a href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+                     <h5 class="h6 mb-0"><a href="/berita/detail">Cheerful Loving Couple Bakers Drinking Coffee</a>
                      </h5>
                      <small>March 14, 2020</small>
                      </div>
@@ -81,11 +81,11 @@ Beranda
             </ul>
             <ul class="list-unstyled widget-list">
                   <li class="media widget-post align-items-center">
-                     <a href="post-details-2.html">
+                     <a href="/berita/detail">
                      <img loading="lazy" class="mr-3" src="{{asset('/images/post/post-2.jpg')}}">
                      </a>
                      <div class="media-body">
-                     <h5 class="h6 mb-0"><a href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+                     <h5 class="h6 mb-0"><a href="/berita/detail">Cheerful Loving Couple Bakers Drinking Coffee</a>
                      </h5>
                      <small>March 14, 2020</small>
                      </div>

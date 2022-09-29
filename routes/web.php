@@ -18,6 +18,12 @@ Route::get('/form', function () {
 Route::get('/beranda', function () {
     return view('front/beranda/index');
 });
+Route::get('/berita', function () {
+    return view('front/berita/index');
+});
+Route::get('/berita/detail', function () {
+    return view('front/berita/detail');
+});
 Route::get('/pelayanan', function () {
     return view('front/pelayanan/index');
 });

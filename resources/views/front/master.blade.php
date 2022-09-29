@@ -25,7 +25,7 @@
    
    <link rel="stylesheet" href="{{asset('/plugins/themify-icons/themify-icons.css')}}">
    <link rel="stylesheet" href="{{asset('/plugins/slick/slick.css')}}">
-
+   
    <!-- Main Stylesheet -->
    <link rel="stylesheet" href="css/style.css">
 
@@ -52,6 +52,9 @@
                   <li class="nav-item">
                      <a class="nav-link" href="/beranda">Beranda</a>
                   </li>
+                  <!-- <li class="nav-item">
+                     <a class="nav-link" href="/berita">Berita</a>
+                  </li> -->
                   <li class="nav-item">
                      <a class="nav-link" href="/profil">Profil</a>
                   </li>
@@ -88,6 +91,7 @@
                <h6 class="mb-4">Menu Pintas</h6>
                <ul class="list-unstyled footer-list">
                   <li><a href="about.html">Beranda</a></li>
+                  <li><a href="contact.html">Profil</a></li>
                   <li><a href="contact.html">Profil</a></li>
                   <li><a href="privacy-policy.html">Galeri</a></li>
                   <li><a href="terms-conditions.html">Pelayanan</a></li>
