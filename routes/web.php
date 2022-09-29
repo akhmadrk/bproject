@@ -15,14 +15,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/form', function () {
     return view('front/pelayanan/form');
 });
-Route::get('/beranda', function () {
+Route::get('/', function () {
     return view('front/beranda/index');
 });
 Route::get('/berita', function () {
     return view('front/berita/index');
 });
-Route::get('/berita/detail', function () {
+Route::get('/detail', function () {
     return view('front/berita/detail');
+});
+Route::get('/profil', function () {
+    return view('front/profil/index');
+});
+Route::get('/galeri', function () {
+    return view('front/galeri/index');
+});
+Route::get('/kontak', function () {
+    return view('front/kontak/index');
 });
 Route::get('/pelayanan', function () {
     return view('front/pelayanan/index');

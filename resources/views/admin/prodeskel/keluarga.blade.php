@@ -140,11 +140,15 @@ Prodeskel
             <div class="card-body p-3">
               <div class="row">
                 <form role="form">
-                  <label>Nomor Kartu Keluarga</label>
+                  <label>Jumlah Penghasilan Perbulan</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="No. kartu Keluarga" aria-label="nokk" aria-describedby="nokk">
+                    <input type="text" name="penghasilan" id="penghasilan" class="form-control" placeholder="Jumlah Penghasilan Perbulan" aria-label="nokk" aria-describedby="nokk">
                   </div>
-                  <label>Nama Kepala Keluarga</label>
+                  <label>Jumlah Pengeluaran Perbulan</label>
+                  <div class="mb-3">
+                    <input type="text" name="pengeluaran" id="pengeluaran" class="form-control" placeholder="Jumlah Penghasilan Perbulan" aria-label="nokk" aria-describedby="nokk">
+                  </div>
+                  <label>Kategori KK</label>
                   <div class="mb-3">
                     <input type="text" class="form-control" placeholder="Nama" aria-label="Nama" aria-describedby="Nama">
                   </div>

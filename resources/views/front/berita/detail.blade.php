@@ -1,7 +1,7 @@
 @extends("front/master")
 
 @section("title-page")
-Berita
+Detail Berita
 @endsection
 
 @section("content")

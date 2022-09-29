@@ -116,7 +116,7 @@ Beranda
             </div>
       </article>
    </div>
-      <div class="col-lg-4 col-sm-12 mb-4">
+   <div class="col-lg-4 col-sm-12 mb-4">
       <article class="mb-5">
             <div class="card shadow-sm">
                   <img loading="lazy" src="images/post/post-2.jpg" class="img-fluid" alt="post-thumb">
@@ -133,7 +133,7 @@ Beranda
             </div>
       </article>
    </div>
-      <div class="col-lg-4 col-sm-12 mb-4">
+   <div class="col-lg-4 col-sm-12 mb-4">
       <article class="mb-5">
             <div class="card shadow-sm">
                   <img loading="lazy" src="images/post/post-6.jpg" class="img-fluid" alt="post-thumb">

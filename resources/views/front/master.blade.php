@@ -40,8 +40,8 @@
    <header class="sticky-top bg-primary border-bottom border-default">
       <div class="container">
          <nav class="navbar navbar-expand-lg navbar-white">
-            <a class="navbar-brand" href="/beranda">
-               <img class="img-fluid" width="150px" src="{{asset('/images/babakan.svg')}}" alt="LogBook">
+            <a class="navbar-brand" href="/">
+               <img class="img-fluid" width="150px" src="{{asset('/images/babakan.svg')}}" alt="Logo">
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
                <i class="ti-menu"></i>
@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse text-center" id="navigation">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                     <a class="nav-link" href="/beranda">Beranda</a>
+                     <a class="nav-link" href="/">Beranda</a>
                   </li>
                   <!-- <li class="nav-item">
                      <a class="nav-link" href="/berita">Berita</a>

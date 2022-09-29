@@ -247,17 +247,44 @@ Prodeskel
                       <option value="Tubektomi"> Tubektomi /</option>
                     </select>
                   </div>
-                  <label>Nama Pengisi</label>
+                  <label>Cacat Menurut Jenis</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Pengisi" name="pengisi" id="kabupaten">
+                    <select name="cacat" id="cacat" class="form-control" multiple>
+                      <option value=""><b>-- CACAT FISIK --</b> </option>
+                      <option value="Tuna rungu"> Tuna rungu</option>
+                      <option value="Tuna wicara"> Tuna wicara</option>
+                      <option value="Tuna Netra"> Tuna Netra</option>
+                      <option value="Lumpuh"> Lumpuh</option>
+                      <option value="Sumbing"> Sumbing</option>
+                      <option value=""><b>-- CACAT MENTAL --</b> </option>
+                      <option value="Idiot"> Idiot</option>
+                      <option value="Gila"> Gila</option>
+                      <option value="Stress"> Stress</option>
+                    </select>
                   </div>
-                  <label>Pekerjaan</label>
+                  <label>Kedudukan Anggota Keluarga sebagai Wajib Pajak dan Retribusi</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Pekerjaan Pengisi" name="pekerjaan" id="pekerjaan">
+                    <select name="wajib" id="wajib" class="form-control">
+                      <option value=""> pilih kedudukan wajib pajak </option>
+                    </select>
                   </div>
-                  <label>Jabatan</label>
+                  <label>Lembaga Pemerintahan Yang Diikuti Anggota Keluarga </label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Jabatan Pengisi" name="jabatan" id="jabatan">
+                    <select name="lem_pemerintahan" id="lem_pemerintahan" class="form-control">
+                      <option value=""> pilih lembaga pemerintahan yang diikuti </option>
+                    </select>
+                  </div>
+                  <label>Lembaga Kemasyarakatan Yang Diikuti Anggota Keluarga </label>
+                  <div class="mb-3">
+                    <select name="lem_masyarakat" id="lem_masyarakat" class="form-control">
+                      <option value=""> pilih lembaga masyarakat yang diikuti </option>
+                    </select>
+                  </div>
+                  <label>Lembaga Ekonomi Yang Dimiliki Anggota Keluarga </label>
+                  <div class="mb-3">
+                    <select name="lem_ekenomi" id="lem_ekonomi" class="form-control">
+                      <option value=""> pilih lembaga ekonomi yang diikuti </option>
+                    </select>
                   </div>
                   <div class="text-center">
                     <button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0" data-bs-toggle="modal" data-bs-target="#modalSave">Simpan</button>
