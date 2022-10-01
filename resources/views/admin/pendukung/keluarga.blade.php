@@ -402,6 +402,87 @@ Prodeskel
                       <option value="Memiliki alat produksi dan pengolahan hasil industri bahan bakar dan gas skala rumah tangga"> Memiliki alat produksi dan pengolahan hasil industri bahan bakar dan gas skala rumah tangga</option>
                     </select>
                   </div>
+                  <label>Aset Perumahan</label>
+                  <div class="mb-3">
+                    <select name="aset_perumahan" id="aset_perumahan" class="form-control" multiple>
+                    	<option value=""><b> -- Dinding -- </b></option>
+                      <option value="Tembok"> Tembok</option>
+                      <option value="Kayu"> Kayu</option>
+                      <option value="Bambu"> Bambu</option>
+                      <option value="Tanah Liat"> Tanah Liat</option>
+                      <option value="Pelepah kelapa/lontar/gebang"> Pelepah Kelapa/Lontar/Gebang</option>
+                      <option value="Dedaunan"> Dedaunan</option>
+                      <option value=""><b> -- Lantai -- </b></option>
+                      <option value="Keramik"> Keramik</option>
+                      <option value="Semen"> Semen</option>
+                      <option value="Kayu"> Kayu</option>
+                      <option value="Tanah"> Tanah</option>
+                      <option value=""><b> -- Atap -- </b></option>
+                      <option value="Genteng"> Genteng</option>
+                      <option value="Seng"> Seng</option>
+                      <option value="Asbes"> Asbes</option>
+                      <option value="Beton"> Beton</option>
+                      <option value="Bambu"> Bambu</option>
+                      <option value="Kayu"> Kayu</option>
+                      <option value="Daun lontar/gebang/enau"> Daun lontar/gebang/enau</option>
+                      <option value="Daun Ilalang"> Daun Ilalang</option>
+                    </select>
+                  </div>
+                  <label> Aset Lainnya dalam Keluarga</label>
+                  <div class="mb-3">
+                    <select name="aset_lainnya" id="aset_lainnya" class="form-control">
+                    	<option value="Memiliki TV dan elektronik sejenis lainnya"> Memiliki TV dan elektronik sejenis lainnya</option>
+                      <option>Memiliki TV dan elektronik sejenis lainnya</option> 
+                      <option>Memiliki sepeda motor pribadi</option> 
+                      <option>Memiliki mobil pribadi dan sejenisnya</option> 
+                      <option>Memiliki perahu bermotor</option> 
+                      <option>Memiliki kapal barang</option> 
+                      <option>Memiliki kapal penumpang</option> 
+                      <option>Memiliki kapal pesiar</option> 
+                      <option>Memiliki/menyewa helikopter pribadi</option> 
+                      <option>Memiliki/menyewa pesawat terbang pribadi</option> 
+                      <option>Memiliki ternak besar</option> 
+                      <option>Memiliki ternak kecil</option> 
+                      <option>Memiliki hiasan emas/berlian</option> 
+                      <option>Memiliki buku tabungan bank</option> 
+                      <option>Memiliki buku surat berharga</option> 
+                      <option>Memiliki sertifikat deposito</option> 
+                      <option>Memiliki sertifikat tanah</option> 
+                      <option>Memiliki sertifikat bangunan</option> 
+                      <option>Memiliki perusahaan industri besar</option> 
+                      <option>Memiliki perusahaan industri menengah</option> 
+                      <option>Memiliki perusahaan industri kecil</option> 
+                      <option>Memiliki usaha perikanan</option> 
+                      <option>Memiliki usaha peternakan</option> 
+                      <option>Memiliki usaha perkebunan</option> 
+                      <option>Memiliki usaha pasar swalayan</option> 
+                      <option>Memiliki usaha di pasar swalayan</option> 
+                      <option>Memiliki usaha di pasar tradisional</option> 
+                      <option>Memiliki usaha di pasar desa</option> 
+                      <option>Memiliki usaha transportasi</option> 
+                      <option>Memiliki saham di perusahaan</option> 
+                      <option>Pelanggan Telkom</option> 
+                      <option>Memiliki HP GSM</option> 
+                      <option>Memiliki HP CDMA</option> 
+                      <option>Memiliki Usaha Wartel</option> 
+                      <option>Memiliki parabola</option> 
+                      <option>Berlangganan koran/majalah</option> 
+                    </select>
+                  </div>
+                  <label>Kualitas Bayi dalam Keluarga (jika ada/pernah ada bayi) </label>
+                  <div class="mb-3">
+                    <select name="kualitas_bayi" id="kualitas_bayi" class="form-control">
+                      <option>Keguguran kandungan</option>
+                      <option>Bayi lahir hidup normal</option>
+                      <option>Bayi lahir hidup cacat</option>
+                      <option>Bayi lahir mati</option>
+                      <option>Bayi lahir mati</option>
+                      <option>Bayi lahir berat kurang dari 2,5 kg</option>
+                      <option>Bayi lahir berat lebih dari 4 kg</option>
+                      <option>Bayi 0-5 tahun hidup yang menderita kelainan organ tubuh, fisik dan mental</option>
+                    </select>
+                  </div>
+
                   <div class="text-center">
                     <button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0" data-bs-toggle="modal" data-bs-target="#modalSave">Simpan</button>
                   </div>

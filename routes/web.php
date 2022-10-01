@@ -36,7 +36,7 @@ Route::get('/kontak', function () {
 Route::get('/pelayanan', function () {
     return view('front/pelayanan/index');
 });
-Route::get('/admin/dashboard', function () {
+Route::get('/admin', function () {
     return view('admin/dashboard/index');
 });
 Route::get('/admin/approval/', function () {
@@ -44,6 +44,9 @@ Route::get('/admin/approval/', function () {
 });
 Route::get('/admin/prodeskel/', function () {
     return view('admin/prodeskel/index');
+});
+Route::get('/admin/pendukung', function () {
+    return view('admin/pendukung/index');
 });
 Route::get('/admin/prodeskel/form', function () {
     return view('admin/prodeskel/form');
