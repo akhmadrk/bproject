@@ -57,3 +57,15 @@ Route::get('/admin/prodeskel/keluarga', function () {
 Route::get('/admin/prodeskel/anggota', function () {
     return view('admin/prodeskel/anggota');
 });
+Route::get('/admin/galeri', function () {
+    return view('admin/galeri/index');
+});
+Route::get('/admin/galeri/form', function () {
+    return view('admin/galeri/form');
+});
+Route::get('/admin/berita', function () {
+    return view('admin/berita/index');
+});
+Route::get('/admin/user', function () {
+    return view('admin/user/index');
+});

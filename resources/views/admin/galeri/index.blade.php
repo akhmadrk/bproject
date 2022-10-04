@@ -1,7 +1,7 @@
 @extends("admin/master")
 
 @section("title-page")
-Prodeskel
+Galeri
 @endsection
 
 @section("content")
@@ -11,9 +11,9 @@ Prodeskel
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Prodeskel</li>
+        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Galeri</li>
       </ol>
-      <h6 class="font-weight-bolder mb-0">Anggota Keluarga</h6>
+      <h6 class="font-weight-bolder mb-0">Galeri</h6>
     </nav>
       <ul class="navbar-nav  justify-content-end">
         <li class="nav-item d-flex align-items-center">
@@ -45,7 +45,7 @@ Prodeskel
               <a class="dropdown-item border-radius-md" href="javascript:;">
                 <div class="d-flex py-1">
                   <div class="my-auto">
-                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                    <img src="{{asset('/admin/assets/img/team-2.jpg')}}" class="avatar avatar-sm  me-3 ">
                   </div>
                   <div class="d-flex flex-column justify-content-center">
                     <h6 class="text-sm font-weight-normal mb-1">
@@ -63,7 +63,7 @@ Prodeskel
               <a class="dropdown-item border-radius-md" href="javascript:;">
                 <div class="d-flex py-1">
                   <div class="my-auto">
-                    <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                    <img src="{{asset('/admin/assets/img/small-logos/logo-spotify.svg')}}" class="avatar avatar-sm bg-gradient-dark  me-3 ">
                   </div>
                   <div class="d-flex flex-column justify-content-center">
                     <h6 class="text-sm font-weight-normal mb-1">
@@ -114,188 +114,113 @@ Prodeskel
   </div>
 </nav>
 <!-- End Navbar -->
+<div class="container-fluid">
+  <div class="page-header min-height-100 border-radius-xl mt-4" style="background-image: url('{{asset('/admin/assets/img/curved-images/curved0.jpg')}}'); background-position-y: 50%;">
+    <span class="mask bg-gradient-primary opacity-6"></span>
+  </div>
+  <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
+    <div class="row gx-4">
+      <div class="col-auto">
+        <div class="avatar avatar-xl position-relative">
+        </div>
+      </div>
+      <div class="col-auto my-auto">
+        <div class="h-100">
+          <h5 class="mb-1">
+            Galeri
+          </h5>
+          <p class="mb-0 font-weight-bold text-sm">
+            Data Galeri
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container-fluid py-4">
   <div class="row">
-    <div class="col-lg-12">
-      <div class="row">
-        <div class="col-xl-12 mb-xl-0 mb-4">
-          <div class="card bg-transparent shadow-xl">
-            <div class="overflow-hidden position-relative border-radius-xl" style="background-image: url('{{asset('/admin/assets/img/curved-images/curved0.jpg')}}')">
-              <span class="mask bg-gradient-primary"></span>
-              <div class="card-body position-relative z-index-1 p-3">
-                <h3 class="text-white">Form Anggota Keluarga</h3>
+  <div class="col-12 mt-4">
+    <div class="card mb-4">
+      <div class="card-header pb-0 p-3">
+        <h6 class="mb-1">Galeri</h6>
+        <p class="text-sm">Architects design houses</p>
+      </div>
+      <div class="card-body p-3">
+        <div class="row">
+          <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+            <div class="card card-blog card-plain">
+              <div class="position-relative">
+                <a class="d-block shadow-xl border-radius-xl">
+                  <img src="{{asset('/admin/assets/img/home-decor-1.jpg')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                </a>
+              </div>
+              <div class="card-body px-1 pb-0">
+                <p class="text-gradient text-dark mb-2 text-sm">Project #2</p>
+                <a href="javascript:;">
+                  <h5>
+                    Modern
+                  </h5>
+                </a>
+                <p class="mb-4 text-sm">
+                  As Uber works through a huge amount of internal management turmoil.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-12 mb-lg-0 mb-4">
-          <div class="card mt-4">
-            <div class="card-header pb-0 p-3">
-              <div class="row">
-                <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0">Form Data Keluarga</h6>
-                </div>
+          <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+            <div class="card card-blog card-plain">
+              <div class="position-relative">
+                <a class="d-block shadow-xl border-radius-xl">
+                  <img src="{{asset('/admin/assets/img/home-decor-2.jpg')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                </a>
+              </div>
+              <div class="card-body px-1 pb-0">
+                <p class="text-gradient text-dark mb-2 text-sm">Project #1</p>
+                <a href="javascript:;">
+                  <h5>
+                    Scandinavian
+                  </h5>
+                </a>
+                <p class="mb-4 text-sm">
+                  Music is something that every person has his or her own specific opinion about.
+                </p>
               </div>
             </div>
-            <div class="card-body p-3">
-              <div class="row">
-                <form role="form">
-                  <input type="Hidden" class="form-control" placeholder="No. Urut" name="urut" id="urut">
-                  <label>Nomor Induk Kependudukan</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="No. Induk Kependudukan" name="nik" id="nik">
-                  </div>
-                  <label>Nama Lengkap</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama" id="nama">
-                  </div>
-                  <label>Nomor Akta Kelahiran</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="No. Akta Kelahiran" name="nak" id="nak">
-                  </div>
-                  <label>Jenis Kelamin</label>
-                  <div class="mb-3">
-                    <input type="radio" name="jns" id="pria" value="pria"><label for="pria">Pria</label> &nbsp;&nbsp;&nbsp; 
-                    <input type="radio" name="jns" id="wanita" value="wanita"> <label for="wanita">Wanita</label>
-                  </div>
-                  <label>Hubungan dengan Kepala Keluarga</label>
-                  <div class="mb-3">
-                    <select name="hub" id="hub" class="form-control">
-                      <option value="Istri"> Istri</option>
-                      <option value="Suami"> Suami</option>
-                      <option value="Anak"> Anak</option>
-                      <option value="Cucu"> Cucu</option>
-                      <option value="Mertua"> Mertua</option>
-                      <option value="Menantu"> Menantu</option>
-                      <option value="Keponakan"> Keponakan </option>
-                    </select>
-                  </div>
-                  <label>Tempat Lahir</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Tempat Lahir" name="tl" id="tl">
-                  </div>
-                  <label>Tanggal Lahir</label>
-                  <div class="mb-3">
-                    <input type="date" class="form-control" placeholder="Tanggal Lahir" name="tgl" id="tgl">
-                  </div>
-                  <label>Tanggal Pencatatan</label>
-                  <div class="mb-3">
-                    <input type="date" class="form-control" placeholder="Tanggal Pencatatan" name="tgl_pencatatan" id="tgl_pencatatan">
-                  </div>
-                  <label>Status Perkawinan</label>
-                  <div class="mb-3">
-                    <select name="status_perkawinan" id="status_perkawinan" class="form-control">
-                      <option value="Kawin"> Kawin </option>
-                      <option value="Belum Kawin"> Belum Kawin</option>
-                      <option value="Duda"> Duda</option>
-                      <option value="Janda"> Janda</option>
-                    </select>
-                  </div>
-                  <label>Agama</label>
-                  <div class="mb-3">
-                    <select name="agama" id="agama" class="form-control">
-                      <option value="Islam"> Islam</option>
-                      <option value="Protestan"> Protestan</option>
-                      <option value="Katolik">  Katolik</option>
-                      <option value="Hindu"> Hindu </option>
-                      <option value="Budha"> Budha</option>
-                      <option value="Kong Hu Chu"> Kong Hu Chu</option>
-                    </select>
-                  </div>
-                  <label>Golongan Darah</label>
-                  <div class="mb-3">
-                    <select name="darah" id="darah" class="form-control">
-                      <option value="A">A</option>
-                      <option value="B"> B</option>
-                      <option value="AB"> AB</option>
-                      <option value="O"> O</option>
-                    </select>
-                  </div>
-                  <label>Kewarganegaraan/Etnis/Suku</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Kewarganegaraan/Etnis/Suku" name="suku" id="suku">
-                  </div>
-                  <label>Pendidikan Terakhir</label>
-                  <div class="mb-3">
-                    <select name="pendidikan" id="pendidikan" class="form-control">
-                      <option value="SD">SD</option>
-                      <option value="SMP"> SMP</option>
-                      <option value="SMA"> SMA</option>
-                      <option value="Diploma"> Diploma</option>
-                      <option value="S1"> S1</option>
-                      <option value="S2"> S2</option>
-                      <option value="S3"> S3</option>
-                    </select>
-                  </div>
-                  <label>Mata Pencaharian Pokok/Pekerjaan</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Mata Pencaharian Pokok/Pekerjaan" name="pekerjaan" id="pekerjaan">
-                  </div>
-                  <label>Nama Bapak/Ibu Kandung</label>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nama Bapak/Ibu Kandung" name="ortu" id="ortu">
-                  </div>
-                  <label>Akseptor KB</label>
-                  <div class="mb-3">
-                    <select name="akseptor" id="akseptor" class="form-control">
-                      <option value="Pil"> Pil</option>
-                      <option value="Spiral"> Spiral</option>
-                      <option value="Suntik"> Suntik</option>
-                      <option value="Susuk"> Susuk</option>
-                      <option value="Kondom"> Kondom</option>
-                      <option value="Vasektomi"> Vasektomi</option>
-                      <option value="Tubektomi"> Tubektomi /</option>
-                    </select>
-                  </div>
-                  <label>Cacat Menurut Jenis</label>
-                  <div class="mb-3">
-                    <select name="cacat" id="cacat" class="form-control" multiple>
-                      <option value=""><b>-- CACAT FISIK --</b> </option>
-                      <option value="Tuna rungu"> Tuna rungu</option>
-                      <option value="Tuna wicara"> Tuna wicara</option>
-                      <option value="Tuna Netra"> Tuna Netra</option>
-                      <option value="Lumpuh"> Lumpuh</option>
-                      <option value="Sumbing"> Sumbing</option>
-                      <option value=""><b>-- CACAT MENTAL --</b> </option>
-                      <option value="Idiot"> Idiot</option>
-                      <option value="Gila"> Gila</option>
-                      <option value="Stress"> Stress</option>
-                    </select>
-                  </div>
-                  <label>Kedudukan Anggota Keluarga sebagai Wajib Pajak dan Retribusi</label>
-                  <div class="mb-3">
-                    <select name="wajib" id="wajib" class="form-control">
-                      <option value=""> pilih kedudukan wajib pajak </option>
-                    </select>
-                  </div>
-                  <label>Lembaga Pemerintahan Yang Diikuti Anggota Keluarga </label>
-                  <div class="mb-3">
-                    <select name="lem_pemerintahan" id="lem_pemerintahan" class="form-control">
-                      <option value=""> pilih lembaga pemerintahan yang diikuti </option>
-                    </select>
-                  </div>
-                  <label>Lembaga Kemasyarakatan Yang Diikuti Anggota Keluarga </label>
-                  <div class="mb-3">
-                    <select name="lem_masyarakat" id="lem_masyarakat" class="form-control">
-                      <option value=""> pilih lembaga masyarakat yang diikuti </option>
-                    </select>
-                  </div>
-                  <label>Lembaga Ekonomi Yang Dimiliki Anggota Keluarga </label>
-                  <div class="mb-3">
-                    <select name="lem_ekenomi" id="lem_ekonomi" class="form-control">
-                      <option value=""> pilih lembaga ekonomi yang diikuti </option>
-                    </select>
-                  </div>
-                  <div class="text-center">
-                    <button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0" data-bs-toggle="modal" data-bs-target="#modalSave">Simpan</button>
-                  </div>
-                </form>
+          </div>
+          <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+            <div class="card card-blog card-plain">
+              <div class="position-relative">
+                <a class="d-block shadow-xl border-radius-xl">
+                  <img src="{{asset('/admin/assets/img/home-decor-3.jpg')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                </a>
+              </div>
+              <div class="card-body px-1 pb-0">
+                <p class="text-gradient text-dark mb-2 text-sm">Project #3</p>
+                <a href="javascript:;">
+                  <h5>
+                    Minimalist
+                  </h5>
+                </a>
+                <p class="mb-4 text-sm">
+                  Different people have different taste, and various types of music.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+            <div class="card h-100 card-plain border">
+              <div class="card-body d-flex flex-column justify-content-center text-center">
+                <a data-bs-toggle="modal" data-bs-target="#modalSave">
+                  <i class="fa fa-plus text-secondary mb-3"></i>
+                  <h5 class=" text-secondary"> New project </h5>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <footer class="footer pt-3  ">
@@ -338,8 +263,8 @@ Prodeskel
     <div class="modal-content">
 
       <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+      <div class="modal-header bg-gradient-primary">
+        <h4 class="modal-title text-white">Form Galeri</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
@@ -347,15 +272,27 @@ Prodeskel
       <div class="modal-body">
         <div class="card z-index-0">
           <div class="card-body">
-            Apakah Anda yakin menyimpan data ini?
+            <form role="form">
+              <label>Gambar</label>
+              <div class="mb-3">
+                <input type="file" class="form-control" name="gambar" id="gambar">
+              </div>
+              <label>Judul Gambar</label>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Judul Gambar" aria-label="judul_gambar" aria-describedby="judul_gambar">
+              </div>
+              <label>Deskripsi Gambar</label>
+              <div class="mb-3">
+                <textarea name="deskripsi" id="deskripsi" class="form-control"></textarea>
+              </div>
+            </form>
           </div>
         </div>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-success" data-bs-dismiss="modal">Simpan</button> -->
-        <a href="/admin/prodeskel" class="btn btn-success"> Simpan </a>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Simpan</button>
       </div>
 
     </div>
